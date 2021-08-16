@@ -22,7 +22,7 @@ body{
 h3{
     text-align: center;
     margin-top: 50px;
-    color: #da722d;
+    color: #fafafa;
     margin: 50px auto;
     font-size: 22px;
     font-family: "Monaco", "Helvetica"
@@ -46,9 +46,24 @@ textarea{
     border-radius: .5rem;
     color: #fff;
     text-transform: capitalize;
+  display: inline-block;
+
 }
 
 .highlight{
     background-color: rgb(247, 243, 243);
     color: #333;
+}
+
+@media (max-width:500px){
+  .container{
+    width: 400px
+  }
+  textarea{
+    width: 100%;
+  }
+  
+  .tag{
+    display:block;
+  }
 }
